@@ -21,7 +21,8 @@ length(problems)
 
 not_inches(c(70))
 
-
-
-
-  
+pattern <- "^[4-7]'\\d{1,2}\"$"
+yes <- c("5'7\"","6'2\"")
+no <- c("6,2\"","6.2\"")
+str_detect(yes, pattern)
+str_detect(no,pattern)
